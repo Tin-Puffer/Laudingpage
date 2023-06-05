@@ -62,9 +62,9 @@ export function Block1() {
                   data-ll-status="loaded"
                 />
               </div>
-              <div>
+              {/* <div>
                 <button onClick={handleDownload}>Tải xuống PDF</button>
-              </div>
+              </div> */}
             </Col>
           </Row>
         </div>
