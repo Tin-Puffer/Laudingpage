@@ -2,16 +2,7 @@ import css from "./block2.module.scss";
 import cssB1 from "./block1.module.scss";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import {
-
-  i1,
-  i2,
-  i3,
-  i4,
-  i5,
-  i6,
-
-} from "../public/staticImage/index";
+import { i1, i2, i3, i4, i5, i6 } from "../public/staticImage/index";
 export function Block2() {
   return (
     <>
@@ -172,7 +163,26 @@ export function Block2() {
               </Col>
             </Row>
             <Col span={24} className={css.buttonTry}>
-              <a href="#targetDiv">Dùng thử miễn phí</a>
+              <Col xs={24} md={24} className={css.buttonTry}>
+                <Row style={{ width: "100%" }} gutter={50}>
+                  <Col xs={24} md={12}>
+                    <a href="#targetDiv" className={css.BtnBlue}>
+                      Get started for free
+                    </a>
+                  </Col>
+
+                  <Col xs={24} md={12}>
+                    <a
+                      href="https://drive.google.com/file/d/1pRmU7SzpJhRqInNDsfnslRaFwkI_lfPB/view?usp=sharing"
+                      target={"_blank"}
+                      rel="noreferrer"
+                      className={css.BtnOr}
+                    >
+                      For more details
+                    </a>
+                  </Col>
+                </Row>
+              </Col>
             </Col>
           </Row>
         </div>
