@@ -7,9 +7,22 @@ export function scrollToDiv() {
   targetDiv?.scrollIntoView({ behavior: "smooth" });
 }
 export function Block1() {
+  const handleDownload = () => {
+    // Đường dẫn tới tệp PDF trong thư mục static
+    const pdfPath = "/Logisforce Function Detail - FMS_TMS.pdf";
+
+    // Tạo một thẻ a ẩn để tải xuống tệp
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "Logisforce Function Detail - FMS_TMS.pdf";
+
+    // Kích hoạt sự kiện nhấp chuột trên thẻ a
+    link.dispatchEvent(new MouseEvent("click"));
+  };
+
   return (
     <>
-      <div className={css.container} style={{padding:"15px 0"}}>
+      <div className={css.container} style={{ padding: "15px 0" }}>
         <div className={css.content}>
           <Row className={css.RowFix}>
             <Col className={css.colCustom} xs={24} md={18} lg={12}>
@@ -30,10 +43,10 @@ export function Block1() {
                   <a className={css.bntFree} href="#targetDiv">
                     Dùng thử miễn phí
                   </a>
-                  <a className={css.bntTv}  href="#targetDiv">
+                  <a className={css.bntTv} href="#targetDiv">
                     Đăng ký tư vấn
                   </a>
-                  <a className={css.btnBuy}  href="#targetDiv">
+                  <a className={css.btnBuy} href="#targetDiv">
                     Mua ngay
                   </a>
                 </div>
@@ -48,6 +61,9 @@ export function Block1() {
                   className={css.imageright}
                   data-ll-status="loaded"
                 />
+              </div>
+              <div>
+                <button onClick={handleDownload}>Tải xuống PDF</button>
               </div>
             </Col>
           </Row>
