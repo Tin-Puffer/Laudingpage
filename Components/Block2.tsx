@@ -178,7 +178,7 @@ export function Block2() {
                       rel="noreferrer"
                       className={css.BtnOr}
                     >
-                      For more details
+                      See more functions
                     </a>
                   </Col>
                 </Row>
