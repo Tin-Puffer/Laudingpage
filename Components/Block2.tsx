@@ -167,7 +167,7 @@ export function Block2() {
                 <Row style={{ width: "100%" }} gutter={50}>
                   <Col xs={24} md={12}>
                     <a href="#targetDiv" className={css.BtnBlue}>
-                      Get started for free
+                      Dùng thử miễn phí
                     </a>
                   </Col>
 
@@ -178,7 +178,7 @@ export function Block2() {
                       rel="noreferrer"
                       className={css.BtnOr}
                     >
-                      See more functions
+                      Xem thêm chức năng
                     </a>
                   </Col>
                 </Row>
